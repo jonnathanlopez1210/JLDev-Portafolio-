@@ -1,0 +1,149 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000000;
+  font-family: "JETBRIANS MONO", monospace;
+  margin: 0;
+  padding: 0;
+}
+
+.style-h1 {
+  color: #FFFFFF;
+  line-height: 120%;
+  font-size: 64px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 20px;
+}
+.style-h2 {
+  color: #FFFFFF;
+  line-height: 120%;
+  font-size: 56px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 20px;
+}
+.style-h3 {
+  color: #FFFFFF;
+  line-height: 120%;
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 20px;
+}
+.style-h4 {
+  color: #FFFFFF;
+  line-height: 120%;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 20px;
+}
+.style-h5 {
+  color: #FFFFFF;
+  line-height: 120%;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 20px;
+}
+.style-h6 {
+  color: #FFFFFF;
+  line-height: 120%;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 20px;
+}
+.style-p {
+  color: #00FF00;
+  line-height: 150%;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* ESTILOS PARA BOTONES */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "JETBRIANS MONO", monospace;
+  font-weight: 800;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 2px solid #000;
+  transition: all 0.1s ease;
+  position: relative;
+  outline: none;
+  /* --- VARIANTES DE COLOR --- */
+}
+.btn-primary {
+  background-color: #00FF00;
+  color: #000000;
+  box-shadow: 4px 4px 0px #00ff00;
+}
+.btn-secondary {
+  background-color: #FFF;
+  color: #000;
+  box-shadow: 4px 4px 0px #00FF00;
+}
+.btn-tertiary {
+  background-color: transparent;
+  color: #FFF;
+  border-color: #FFF;
+  box-shadow: 4px 4px 0px #FFF;
+}
+.btn {
+  /* --- TAMAÑOS --- */
+}
+.btn-l {
+  padding: 14px 28px;
+  font-size: 16px;
+}
+.btn-m {
+  padding: 10px 20px;
+  font-size: 14px;
+}
+.btn-s {
+  padding: 6px 12px;
+  font-size: 12px;
+}
+
+/* --- HOVER Y CLICK --- */
+.btn:hover:not(:disabled) {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px #00ff00;
+}
+
+/* Ajuste específico de sombra en hover para Secondary y Tertiary */
+.btn-secondary:hover:not(:disabled) {
+  box-shadow: 6px 6px 0px #00FF00;
+}
+
+.btn-tertiary:hover:not(:disabled) {
+  box-shadow: 6px 6px 0px #FFF;
+}
+
+.btn:active:not(:disabled) {
+  /* Efecto de "botón presionado" */
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px #000;
+}
+
+/* --- ESTADO DESHABILITADO --- */
+.btn:disabled {
+  background-color: #333;
+  color: #666;
+  border-color: #444;
+  box-shadow: none;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/*# sourceMappingURL=main.css.map */
