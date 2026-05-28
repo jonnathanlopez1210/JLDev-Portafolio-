@@ -1,0 +1,51 @@
+@use "../abstracts/variables" as *;
+@use "../base/globals" as *;
+
+.card-listing {
+    border: 2px solid $main-color; 
+    
+    &-header {
+        background-color: $main-color;
+        padding: 16px;
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        align-self: stretch;
+
+        .paragraph-small {
+            color: $secondary-color;
+        }
+
+        .window-effect {
+            display: flex;
+            flex-direction: row;
+            gap: 12px;
+
+            &-square {
+                background-color: $secondary-color;
+                height: 16px;
+                width: 16px;
+                display: block;
+            }
+        }
+    }
+    
+    &-body {
+        padding: 20px;
+    }
+
+}
+
+.card-projects {
+    border: 2px solid $main-color;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; 
+    gap: 16px;
+
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
+}

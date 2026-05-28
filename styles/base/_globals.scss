@@ -15,187 +15,112 @@ a {
     color: $text-color;
 }
 
-.nav {
-    padding: 24px;
-    background-color: $main-color;
-
-    &-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 20px;
-    }
-
-    &-logo {
-        display: flex;
-        align-items: center;
-        color: $secondary-color;
-        font-weight: bold;
-    }
-
-    &-links {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-    }
-    &-list {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-    }
-
-}
-
 body {
-    background-color: $main-color;
+    background-color: $secondary-color;
     font-family: $font-default;
     margin: 0;
     padding: 0;
 }
 
-.style {
-    
-    &-h1{
-    color: $secondary-color;
+h1{
+    color: $main-color;
     line-height: 120%;
     font-size: 64px;
     font-weight: 700;
-    text-align: center;
     margin-top: 20px;
-    }
+}
 
-    &-h2 {
-        color: $secondary-color;
+h2 {
+        color: $main-color;
         line-height: 120%;
         font-size: 56px;
         font-weight: 700;
-        text-align: center;
         margin-top: 20px;
     }
 
-    &-h3 {
-        color: $secondary-color;
-        line-height: 120%;
-        font-size: 32px;
-        font-weight: 600;
-        text-align: center;
-        margin-top: 20px;
-    }
-
-    &-h4 {
-        color: $secondary-color;
-        line-height: 120%;
-        font-size: 24px;
-        font-weight: 600;
-        text-align: center;
-        margin-top: 20px;
-    }
-
-    &-h5 {
-        color: $secondary-color;
-        line-height: 120%;
-        font-size: 24px;
-        font-weight: 500;
-        text-align: center;
-        margin-top: 20px;
-    }
-
-    &-h6 {
-        color: $secondary-color;
-        line-height: 120%;
-        font-size: 18px;
-        font-weight: 500;
-        text-align: center;
-        margin-top: 20px;
-    }
-
-    &-p {
-        color: $text-color;
-        line-height: 150%;
-        font-size: 18px;
-        font-weight: 400;
-        text-align: center;
-        margin-top: 20px;
-    }
+h3 {
+    color: $clear-color;
+    line-height: 120%;
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 20px;
 }
 
-/* ESTILOS PARA BOTONES */
-.btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-family: $font-default;
-    font-weight: 800;
-    text-transform: uppercase;
-    cursor: pointer;
-    border: 2px solid #000;
-    transition: all 0.1s ease;
-    position: relative;
-    outline: none;
-    
-    /* --- VARIANTES DE COLOR --- */
-    &-primary {
-        background-color: $text-color;
-        color: $main-color;
-        box-shadow: 4px 4px 0px #00ff00;
-    }
-
-    &-secondary {
-        background-color: #FFF;
-        color: #000;
-        box-shadow: 4px 4px 0px #00FF00;
-    }
-
-    &-tertiary {
-        background-color: transparent;
-        color: #FFF;
-        border-color: #FFF;
-        box-shadow: 4px 4px 0px #FFF;
-    }
-
-
-    /* --- TAMAÑOS --- */
-    &-l {
-        padding: 14px 28px;
-        font-size: 16px;
-    }
-
-    &-m {
-        padding: 10px 20px;
-        font-size: 14px;
-    }
-
-    &-s {
-        padding: 6px 12px;
-        font-size: 12px;
-    }
+h4 {
+    color: $clear-color;
+    line-height: 120%;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 20px;
 }
 
-
-/* --- HOVER Y CLICK --- */
-.btn:hover:not(:disabled) {
-    transform: translate(-2px, -2px);
-    box-shadow: 6px 6px 0px #00ff00;
+h5 {
+    color: $clear-color;
+    line-height: 120%;
+    font-size: 24px;
+    font-weight: 500;
 }
 
-/* Ajuste específico de sombra en hover para Secondary y Tertiary */
-.btn-secondary:hover:not(:disabled) { box-shadow: 6px 6px 0px #00FF00; }
-.btn-tertiary:hover:not(:disabled) { box-shadow: 6px 6px 0px #FFF; }
-
-.btn:active:not(:disabled) {
-    /* Efecto de "botón presionado" */
-    transform: translate(2px, 2px);
-    box-shadow: 1px 1px 0px #000;
+h6 {
+    color: $clear-color;
+    line-height: 120%;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 20px;
 }
 
+p {
+    color: $clear-color;
+    line-height: 150%;
+    font-size: 18px;
+    font-weight: 400;
+}
 
+.heading-display {
+    color: $main-color;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 144px */ 
+}
 
-/* --- ESTADO DESHABILITADO --- */
-.btn:disabled {
-    background-color: #333;
-    color: #666;
-    border-color: #444;
-    box-shadow: none;
-    cursor: not-allowed;
-    transform: none;
+.paragraph-small {
+    color: $clear-color;
+    line-height: 150%;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.text-captions {
+    color: $clear-color;
+    line-height: 150%;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.text-highlight {
+    color: $clear-color; 
+}
+
+ul, ol {
+    color: $main-color;
+    list-style: none;
+    line-height: 150%;
+    font-size: 16px;
+    font-weight: 400;
+
+    li {
+        padding: 8px;
+        margin-bottom: 4px;
+        transition: all 0.4s ease;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:hover {
+            background-color: $main-color;
+            color: $secondary-color;
+        }
+    }
 }

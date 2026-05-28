@@ -1,11 +1,17 @@
-//Colors
 
-$main-color: #000000; 
-$secondary-color:#FFFFFF;
+
+//Colors
+$main-color: #00ff00; 
+$secondary-color:#0B0B0B;
 $tertiary-color:#00D9FF;
-$warning-color:#B0E600;
+$clear-color: #FFF;
+
+// Secondary colors
+$main-color-09: rgba(0, 255, 0, 0.8);
+$main-color-10: rgba(0, 255, 0, 0.1);
+$main-color-20: rgba(0, 255, 0, 0.2);
 $text-color:#00FF00;
 
 
 //fonts
-$font-default: "JETBRIANS MONO", monospace;
+$font-default: "JetBrains Mono", monospace;

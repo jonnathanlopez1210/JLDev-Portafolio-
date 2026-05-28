@@ -1,0 +1,99 @@
+@use "../abstracts/variables" as *;
+
+.btn {
+    display: flex;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    font-family: $font-default;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    gap: 10px;
+    transition: all 0.1s ease;
+    position: relative;
+    outline: none;
+    letter-spacing: 1.08px;
+    
+    &-icon {
+        width: 20px;
+        height: 20px;
+        fill: currentColor;
+        display: block;
+    }
+
+    /* --- VARIANTES DE BOTONES --- */
+    &-primary {
+        background-color: $secondary-color;
+        border: 2px solid $main-color;
+        color: $main-color;
+
+        &:hover:not(:disabled) {
+            background-color: $main-color;
+            color: $secondary-color;
+            border-color: $secondary-color;
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0px #00ff00;
+        }
+    }
+
+    &-secondary {
+        background-color: $secondary-color;
+        border: 2px solid $clear-color;
+        color: $clear-color;
+
+        &:hover:not(:disabled) { 
+            background-color: $clear-color;
+            color: $secondary-color;
+            border-color: $secondary-color;
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0px #fff;
+        }
+
+    } 
+
+    &-tertiary {
+        background-color: transparent;
+        color: #FFF;
+        border: 0;
+
+        &.btn-tertiary:hover:not(:disabled) {
+            border: 2px solid #FFF;
+            transform: translate(-2px, -2px); 
+            box-shadow: 6px 6px 0px #FFF; 
+        }
+    } 
+
+    /* --- TAMAÑOS --- */
+    &-l {
+        padding: 14px 28px;
+        font-size: 16px;
+    }
+
+    &-m {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    &-s {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    /* --- ESTADOS --- */
+    &:disabled {
+        background-color: #333;
+        color: #666;
+        border-color: #444;
+        box-shadow: none;
+        cursor: not-allowed;
+        transform: none;
+    }
+
+    &:active:not(:disabled) {
+        /* Efecto de "botón presionado" */
+        transform: translate(2px, 2px);
+        box-shadow: 1px 1px 0px #000;
+    }
+}
+
