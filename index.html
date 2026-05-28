@@ -8,13 +8,22 @@
 </head>
 <body>
     <nav class="nav">
-            <ul>
-                <li><a href="#sobre-mi">Sobre mí</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-                <li><a href="#cv">VER MI CV</a></li> 
-            </ul>
-        </nav>
+        <div class="nav-container">
+            <a class="nav-logo" href="#home">
+                <img src="assets/logo.png" alt="Logo" class="nav-logo">
+            </a>
+            <div class="nav-links">      
+                <ul class="nav-list">
+                    <li><a href="#sobre-mi">Sobre mí</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <a href="#cv">
+                    <button class="btn btn-primary btn-m" type="button">VER MI CV</button>
+                </a>
+            </div>
+        </div>        
+    </nav>
     
     <div>
         <h1 class="style-h1">JL Dev 2</h1>
@@ -41,7 +50,7 @@
         <button class="btn btn-tertiary btn-s" type="button">Button PEQUEÑO</button>
 
         /* BUTTON DISABLED */
-        <button class="btn btn-primary btn-l" type="button" disabled>Button GRANDE</button>
+        <button class="btn btn-primary btn-s" type="button" disabled>Button GRANDE</button>
     </div>
 
     <!-- BLOCKQUOTE. -->

@@ -8,6 +8,38 @@ html {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: #00FF00;
+}
+
+.nav {
+  padding: 24px;
+  background-color: #000000;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
 body {
   background-color: #000000;
   font-family: "JETBRIANS MONO", monospace;

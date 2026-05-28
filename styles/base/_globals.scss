@@ -10,6 +10,41 @@ html {
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+    color: $text-color;
+}
+
+.nav {
+    padding: 24px;
+    background-color: $main-color;
+
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &-logo {
+        display: flex;
+        align-items: center;
+        color: $secondary-color;
+        font-weight: bold;
+    }
+
+    &-links {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    &-list {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+}
 
 body {
     background-color: $main-color;
