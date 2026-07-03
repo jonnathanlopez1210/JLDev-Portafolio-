@@ -76,12 +76,36 @@ p {
     font-weight: 400;
 }
 
+span {
+    background-color: transparent;
+    font-family: $font-default;
+    font-weight: 300;
+    text-transform: uppercase;
+    cursor: pointer;
+    gap: 10px;
+    transition: all 0.4s ease;
+    position: relative;
+    outline: none;
+    letter-spacing: 2px;
+    background-color: $secondary-color;
+    border: 2px solid $main-color;
+    color: $main-color;
+    padding: 2px;
+
+    &:hover:not(:disabled) {
+        background-color: $main-color;
+        color: $secondary-color;
+    }
+}
+
+
+
 .heading-display {
     color: $main-color;
     font-size: 72px;
     font-style: normal;
     font-weight: 700;
-    line-height: 120%; /* 144px */ 
+    line-height: 120%;
 }
 
 .paragraph-small {
@@ -96,6 +120,14 @@ p {
     line-height: 150%;
     font-size: 14px;
     font-weight: 400;
+}
+
+.blockquote-effect {
+    border-left: 2px solid $main-color; 
+    padding-left: 15px;
+    margin-left: 5px;
+    color: $clear-color;
+    line-height: 1.5;
 }
 
 .text-highlight {

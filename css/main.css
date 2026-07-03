@@ -74,12 +74,33 @@ p {
   font-weight: 400;
 }
 
+span {
+  background-color: transparent;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 300;
+  text-transform: uppercase;
+  cursor: pointer;
+  gap: 10px;
+  transition: all 0.4s ease;
+  position: relative;
+  outline: none;
+  letter-spacing: 2px;
+  background-color: #0B0B0B;
+  border: 2px solid #00ff00;
+  color: #00ff00;
+  padding: 2px;
+}
+span:hover:not(:disabled) {
+  background-color: #00ff00;
+  color: #0B0B0B;
+}
+
 .heading-display {
   color: #00ff00;
   font-size: 72px;
   font-style: normal;
   font-weight: 700;
-  line-height: 120%; /* 144px */
+  line-height: 120%;
 }
 
 .paragraph-small {
@@ -94,6 +115,14 @@ p {
   line-height: 150%;
   font-size: 14px;
   font-weight: 400;
+}
+
+.blockquote-effect {
+  border-left: 2px solid #00ff00;
+  padding-left: 15px;
+  margin-left: 5px;
+  color: #FFF;
+  line-height: 1.5;
 }
 
 .text-highlight {
@@ -161,15 +190,15 @@ ul li:hover, ol li:hover {
   position: relative;
   outline: none;
   letter-spacing: 1.08px;
+  /* --- VARIANTES DE BOTONES --- */
+  /* --- TAMAÑOS --- */
+  /* --- ESTADOS --- */
 }
 .btn-icon {
   width: 20px;
   height: 20px;
   fill: currentColor;
   display: block;
-}
-.btn {
-  /* --- VARIANTES DE BOTONES --- */
 }
 .btn-primary {
   background-color: #0B0B0B;
@@ -205,9 +234,6 @@ ul li:hover, ol li:hover {
   transform: translate(-2px, -2px);
   box-shadow: 6px 6px 0px #FFF;
 }
-.btn {
-  /* --- TAMAÑOS --- */
-}
 .btn-l {
   padding: 14px 28px;
   font-size: 16px;
@@ -219,9 +245,6 @@ ul li:hover, ol li:hover {
 .btn-s {
   padding: 6px 12px;
   font-size: 12px;
-}
-.btn {
-  /* --- ESTADOS --- */
 }
 .btn:disabled {
   background-color: #333;
@@ -277,6 +300,23 @@ ul li:hover, ol li:hover {
   display: flex;
   justify-content: space-between;
   align-items: start;
+}
+.card-projects:hover {
+  background-color: #00ff00;
+  color: #0B0B0B;
+}
+
+.content-tags {
+  gap: 10px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.content-divider {
+  border: none;
+  border-top: 1px solid #00ff00;
+  margin: 20px 0;
+  width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */

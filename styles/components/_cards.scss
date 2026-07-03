@@ -48,4 +48,22 @@
         justify-content: space-between;
         align-items: start;
     }
+
+    &:hover {
+        background-color: $main-color;
+        color: $secondary-color;
+    }
+}
+
+.content-tags {
+    gap: 10px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.content-divider {
+    border: none;
+    border-top: 1px solid $main-color;
+    margin: 20px 0;
+    width: 100%;
 }
