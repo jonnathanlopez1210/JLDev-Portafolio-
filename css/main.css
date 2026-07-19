@@ -25,7 +25,6 @@ h1 {
   line-height: 120%;
   font-size: 64px;
   font-weight: 700;
-  margin-top: 20px;
 }
 
 h2 {
@@ -33,7 +32,6 @@ h2 {
   line-height: 120%;
   font-size: 56px;
   font-weight: 700;
-  margin-top: 20px;
 }
 
 h3 {
@@ -41,7 +39,6 @@ h3 {
   line-height: 120%;
   font-size: 32px;
   font-weight: 600;
-  margin-top: 20px;
 }
 
 h4 {
@@ -49,7 +46,6 @@ h4 {
   line-height: 120%;
   font-size: 24px;
   font-weight: 600;
-  margin-top: 20px;
 }
 
 h5 {
@@ -74,7 +70,7 @@ p {
   font-weight: 400;
 }
 
-span {
+.tag {
   background-color: transparent;
   font-family: "JetBrains Mono", monospace;
   font-weight: 300;
@@ -90,7 +86,7 @@ span {
   color: #00ff00;
   padding: 2px;
 }
-span:hover:not(:disabled) {
+.tag:hover:not(:disabled) {
   background-color: #00ff00;
   color: #0B0B0B;
 }
@@ -115,6 +111,7 @@ span:hover:not(:disabled) {
   line-height: 150%;
   font-size: 14px;
   font-weight: 400;
+  margin-bottom: 10px;
 }
 
 .blockquote-effect {
@@ -147,6 +144,47 @@ ul li:last-child, ol li:last-child {
 ul li:hover, ol li:hover {
   background-color: #00ff00;
   color: #0B0B0B;
+}
+
+/* Nombre como terminal */
+.terminal {
+  padding: 5px;
+}
+.terminal-line {
+  display: flex;
+  align-items: center;
+}
+.terminal-user {
+  color: #FFF;
+  font-weight: 700;
+}
+.terminal-symbol-1 {
+  color: #00ff00;
+  font-weight: 700;
+}
+.terminal-symbol-2 {
+  color: #00D9FF;
+  font-weight: 700;
+}
+.terminal-symbol-3 {
+  color: #FFF;
+  font-weight: 700;
+}
+.terminal-symbol-4 {
+  color: #00ff00;
+  font-weight: 700;
+  padding-left: 15px;
+}
+.terminal-cursor {
+  width: 0.65rem;
+  height: 1.4rem;
+  background: #B0E600;
+  animation: blink 0.9s steps(1) infinite;
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }
 
 .nav {
@@ -190,15 +228,15 @@ ul li:hover, ol li:hover {
   position: relative;
   outline: none;
   letter-spacing: 1.08px;
-  /* --- VARIANTES DE BOTONES --- */
-  /* --- TAMAÑOS --- */
-  /* --- ESTADOS --- */
 }
 .btn-icon {
   width: 20px;
   height: 20px;
   fill: currentColor;
   display: block;
+}
+.btn {
+  /* --- VARIANTES DE BOTONES --- */
 }
 .btn-primary {
   background-color: #0B0B0B;
@@ -234,6 +272,9 @@ ul li:hover, ol li:hover {
   transform: translate(-2px, -2px);
   box-shadow: 6px 6px 0px #FFF;
 }
+.btn {
+  /* --- TAMAÑOS --- */
+}
 .btn-l {
   padding: 14px 28px;
   font-size: 16px;
@@ -245,6 +286,9 @@ ul li:hover, ol li:hover {
 .btn-s {
   padding: 6px 12px;
   font-size: 12px;
+}
+.btn {
+  /* --- ESTADOS --- */
 }
 .btn:disabled {
   background-color: #333;
@@ -290,20 +334,20 @@ ul li:hover, ol li:hover {
 }
 
 .card-projects {
-  border: 2px solid #00ff00;
+  border: 2px solid rgba(0, 255, 0, 0.2);
   padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
+.card-projects:hover {
+  background-color: rgba(0, 255, 0, 0.2);
+  color: #0B0B0B;
+}
 .card-projects-header {
   display: flex;
   justify-content: space-between;
   align-items: start;
-}
-.card-projects:hover {
-  background-color: #00ff00;
-  color: #0B0B0B;
 }
 
 .content-tags {

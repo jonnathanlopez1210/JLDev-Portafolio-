@@ -1,0 +1,7 @@
+@use "variables" as *;
+
+@mixin gap-size($size) {
+    gap: $size;
+    display: flex;
+    flex-direction: column;
+}
