@@ -38,14 +38,14 @@
 }
 
 .card-projects {
-    border: 2px solid $main-color-20;
+    border: 2px solid $main-color-09;
     padding: 20px;
     display: flex;
     flex-direction: column; 
     gap: 16px;
 
     &:hover {
-        background-color: $main-color-20; ;
+        background-color: $main-color-08; 
         color: $secondary-color;
     }
 

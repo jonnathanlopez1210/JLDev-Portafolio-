@@ -334,14 +334,14 @@ ul li:hover, ol li:hover {
 }
 
 .card-projects {
-  border: 2px solid rgba(0, 255, 0, 0.2);
+  border: 2px solid rgba(0, 255, 0, 0.9);
   padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 .card-projects:hover {
-  background-color: rgba(0, 255, 0, 0.2);
+  background-color: rgba(0, 255, 0, 0.08);
   color: #0B0B0B;
 }
 .card-projects-header {
