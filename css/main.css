@@ -64,10 +64,21 @@ h6 {
 }
 
 p {
-  color: #FFF;
+  color: #00ff00;
   line-height: 150%;
   font-size: 18px;
   font-weight: 400;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-captions {
+  color: #FFF;
+  line-height: 150%;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 10px;
 }
 
 .tag {
@@ -106,24 +117,12 @@ p {
   font-weight: 400;
 }
 
-.text-captions {
-  color: #FFF;
-  line-height: 150%;
-  font-size: 14px;
-  font-weight: 400;
-  margin-bottom: 10px;
-}
-
 .blockquote-effect {
   border-left: 2px solid #00ff00;
   padding-left: 15px;
   margin-left: 5px;
   color: #FFF;
   line-height: 1.5;
-}
-
-.text-highlight {
-  color: #FFF;
 }
 
 ul, ol {
