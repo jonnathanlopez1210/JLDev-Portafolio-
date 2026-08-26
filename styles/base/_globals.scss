@@ -208,11 +208,49 @@ ul, ol {
     }
 }
 
-/*.hero {
+.hero {
+    padding: 20px;
+    
     &-content {
-        
+        padding: 20px;
     }
     
-}*/ 
+}
 
+.about {
+    padding: 20px;
+    
+    &-item {
+        padding: 20px;
+    }
+}
 
+.rectangle {
+    width: 45px;
+    height: 45px;
+    background-color: $main-color;
+    flex-shrink: 0; 
+    margin-top: 4px;
+}
+
+.skills {
+    &-header {
+        display: flex;
+        align-items: center;
+        gap: 12px; 
+    }
+
+    &-title {
+        font-weight: bold;
+        
+        &-top {
+            display: block;
+            color: $clear-color;
+        }
+
+        &-bottom {
+            display: block;
+            color: $main-color;
+        }
+    }
+}

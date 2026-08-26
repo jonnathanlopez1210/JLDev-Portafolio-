@@ -12,6 +12,11 @@
         gap: 12px;
         align-items: center;
         align-self: stretch;
+        
+
+        &-terminal {
+            justify-content: space-between;
+        }
 
         .paragraph-small {
             color: $secondary-color;

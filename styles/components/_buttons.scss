@@ -33,7 +33,7 @@
             color: $secondary-color;
             border-color: $secondary-color;
             transform: translate(-2px, -2px);
-            box-shadow: 6px 6px 0px #00ff00;
+            box-shadow: 6px 6px 0px $main-color;
         }
     }
 
@@ -47,20 +47,22 @@
             color: $secondary-color;
             border-color: $secondary-color;
             transform: translate(-2px, -2px);
-            box-shadow: 6px 6px 0px #fff;
+            box-shadow: 6px 6px 0px $clear-color;
         }
 
     } 
 
     &-tertiary {
         background-color: transparent;
-        color: #FFF;
+        color: $clear-color;
         border: 0;
 
         &.btn-tertiary:hover:not(:disabled) {
-            border: 2px solid #FFF;
+            border: 3px solid $secondary-color;
             transform: translate(-2px, -2px); 
-            box-shadow: 6px 6px 0px #FFF; 
+            box-shadow: 6px 6px 0px $main-color; 
+            color: $secondary-color;
+            background-color: $clear-color;
         }
     } 
 
@@ -93,7 +95,7 @@
     &:active:not(:disabled) {
         /* Efecto de "botón presionado" */
         transform: translate(2px, 2px);
-        box-shadow: 1px 1px 0px #000;
+        box-shadow: 1px 1px 0px $secondary-color;
     }
 }
 
