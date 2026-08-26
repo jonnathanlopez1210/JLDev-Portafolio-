@@ -1,1 +1,37 @@
 @use "../abstracts/variables" as *;
+
+
+// MOBILE FIRST
+.container {
+    padding-inline: 1.5rem;
+}
+
+
+// TABLET
+@media (min-width: 768px) {
+
+    .container {
+        padding-inline: 3rem;
+    }
+
+}
+
+
+// DESKTOP
+@media (min-width: 1024px) {
+
+    .container {
+        padding-inline: 5rem;
+    }
+
+}
+
+
+// LARGE DESKTOP
+@media (min-width: 1440px) {
+
+    .container {
+        padding-inline: 8rem;
+    }
+
+}

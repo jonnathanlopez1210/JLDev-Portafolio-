@@ -186,6 +186,12 @@ ul li:hover, ol li:hover {
   }
 }
 
+/*.hero {
+    &-content {
+
+    }
+
+}*/
 .nav {
   padding: 24px;
   background-color: #00ff00;

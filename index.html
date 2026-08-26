@@ -32,20 +32,30 @@
         </div>        
     </nav-->
     
-    <section class="section-hero">
-        <div class="terminal">
-            <p class="terminal-line">
-                <span class="terminal-user">jonnathan@terminal</span>
-                <span class="terminal-symbol-1">:</span>
-                <span class="terminal-symbol-2">~</span>
-                <span class="terminal-symbol-3">$</span>
-                <span class="terminal-cursor"></span>
-            </p>
+
+    <!-- HERO --> 
+    <section class="hero">
+
+        <!-- Primera Seccion Hero -->
+        <!-- Terminal, titulo y subtitulo hero. -->
+        <div class="hero-contect hero-contect--intro">
+            <div class="terminal">
+                <p class="terminal-line ">
+                    <span class="terminal-user">jonnathan@terminal</span>
+                    <span class="terminal-symbol-1">:</span>
+                    <span class="terminal-symbol-2">~</span>
+                    <span class="terminal-symbol-3">$</span>
+                    <span class="terminal-cursor"></span>
+                </p>
+            </div>
+            <div class="hero-text">
+                <h1 class="heading-display">Jonnathan López</h1>
+                <p class="text-captions ">STATUS: ESTUDIANTE | ETAPA LÉCTIVA</p>
+            </div>
         </div>
 
-        <div class="content-title">
-            <h1 class="heading-display">Jonnathan López</h1>
-            <p class="text-captions ">STATUS: ESTUDIANTE | ETAPA LÉCTIVA</p>
+        <!-- Segunda Seccion Hero -->
+        <div class="hero-contect hero-contect--info">
             <div class="terminal">
                 <p class="terminal-line">
                     <span class="terminal-user">jonnathan@terminal</span>
@@ -55,8 +65,14 @@
                     <span class="terminal-symbol-4">cat bio.txt</span>
                 </p>
             </div>
-            <p class="text-1">Me apasiona crear experiencias web atractivas y funcionales.Desarrollo aplicaciones modernas con React, TypeScript y Tailwind CSS.</p>
-            <p class="text-captions">#  Siempre aprendiendo,  siempre programando</p>
+            <div class="hero-text">
+                <p class="text-1">Me apasiona crear experiencias web atractivas y funcionales.Desarrollo aplicaciones modernas con React, TypeScript y Tailwind CSS.</p>
+                <p class="text-captions">#  Siempre aprendiendo,  siempre programando</p>
+            </div>
+        </div>
+
+        <!-- Tercera Seccion Hero -->
+        <div class="hero-contect hero-contect--actions">
             <div class="terminal">
                 <p class="terminal-line">
                     <span class="terminal-user">jonnathan@terminal</span>
@@ -67,13 +83,36 @@
                 </p>
             </div>
 
-            <div>
-                
+            <div class="hero-actions" style="display: flex; gap: 24px; width: 100%; flex-wrap: wrap; align-items: left; justify-content: left; margin: 32px 0;"> <!-- Estos estilos volverlos un mixin -->
+                <button class="btn btn-primary btn-l" type="button">
+                    > Button GRANDE
+                </button>
+                <button class="btn btn-tertiary btn-l" type="button">> Ver proyectos</button>
+                <button class="btn btn-tertiary btn-l" type="button">> Ver proyectos</button>
+            </div>
+
+            <div class="terminal">
+                <p class="terminal-line ">
+                    <span class="terminal-user">jonnathan@terminal</span>
+                    <span class="terminal-symbol-1">:</span>
+                    <span class="terminal-symbol-2">~</span>
+                    <span class="terminal-symbol-3">$</span>
+                    <span class="terminal-cursor"></span>
+                </p>
             </div>
         </div>
-
     </section>
 
+    <section>
+        <div class="card-listing-header">
+            <div class="window-effect">
+                <div class="window-effect-square"></div>
+                <div class="window-effect-square"></div>
+                <div class="window-effect-square"></div>
+            </div>
+            <p class="paragraph-small">$ CAT ABOUT.MD</p>
+        </div>
+    </section>
 
 
 
@@ -100,7 +139,6 @@
         <p>Probando un P </p>
         <p class="paragraph-small">Probando un P </p>
         <p class="text-captions">Probando un P </p>
-
     </div>
 
     <div style="display: flex; gap: 24px; width: 100%; flex-wrap: wrap; align-items: center; justify-content: center; margin: 32px 0;">
@@ -203,5 +241,5 @@
     </div>
 
 
-</body>
+</body> 
 </html>
