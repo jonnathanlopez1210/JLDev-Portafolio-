@@ -17,7 +17,7 @@ body {
   background-color: #0B0B0B;
   font-family: "JetBrains Mono", monospace;
   margin: 0;
-  padding: 0;
+  padding: 120px;
 }
 
 h1 {
@@ -208,10 +208,15 @@ ul li:hover, ol li:hover {
   margin-top: 4px;
 }
 
+.skills {
+  padding: 120px;
+  gap: 100px;
+}
 .skills-header {
   display: flex;
   align-items: center;
   gap: 12px;
+  padding-bottom: 48px;
 }
 .skills-title {
   font-weight: bold;
@@ -356,7 +361,10 @@ ul li:hover, ol li:hover {
   align-self: stretch;
 }
 .card-listing-header-terminal {
+  display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex: 1;
 }
 .card-listing-header .paragraph-small {
   color: #0B0B0B;
@@ -404,6 +412,12 @@ ul li:hover, ol li:hover {
   border-top: 1px solid #00ff00;
   margin: 20px 0;
   width: 100%;
+}
+
+.skills-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */

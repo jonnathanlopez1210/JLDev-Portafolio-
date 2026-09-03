@@ -15,7 +15,10 @@
         
 
         &-terminal {
+            display: flex;
             justify-content: space-between;
+            align-items: center;
+            flex: 1;
         }
 
         .paragraph-small {
@@ -72,4 +75,13 @@
     border-top: 1px solid $main-color;
     margin: 20px 0;
     width: 100%;
+}
+
+.skills {
+    
+    &-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
 }
