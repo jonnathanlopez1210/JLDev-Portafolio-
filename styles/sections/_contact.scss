@@ -1,0 +1,116 @@
+@use "../abstracts/_mixins" as *;
+@use "../abstracts/_variables" as *;
+
+
+
+.contact {
+
+    // ========================================
+    // 1. CARD PRINCIPAL
+    // ========================================
+
+    &__card {
+        // Estilos de la card principal
+    }
+
+
+    // ========================================
+    // 2. INTRO / INFORMACIÓN
+    // ========================================
+
+    &__intro {
+        border-bottom: 1px solid $main-color-09
+
+        // Contenedor de la primera parte
+    }
+
+    &__text {
+        // Estilos generales para los <p>
+    }
+
+    &__title {
+        // Estilos del h2
+    }
+
+    &__info {
+        // Contenedor de los 4 textos
+    }
+
+    &__detail {
+        // Cada uno de los 4 <p>
+    }
+
+
+    // ========================================
+    // 3. ENLACES
+    // ========================================
+
+    &__links-section {
+        border-bottom: 1px solid $main-color-09;
+    }
+
+    &__links {
+        // Contenedor de los 3 enlaces
+        display: grid;
+        flex-direction: column;
+        gap: 1px;
+    }
+
+    &__link {
+        // Estilo visual de los enlaces
+        text-decoration: none;
+
+        &:hover {
+            // Estado hover
+        }
+
+        &:focus {
+            // Estado focus
+        }
+    }
+
+
+    // ========================================
+    // 4. BOTONES
+    // ========================================
+
+    &__actions {
+        border-bottom: 1px solid $main-color-09;
+    }
+
+    &__buttons {
+        // Contenedor de los botones
+        display: flex;
+        gap: 12px;
+    }
+
+
+    // ========================================
+    // 5. DETALLES
+    // ========================================
+
+    &__details {
+        // Contenedor de los 4 <p>
+        color: $clear-color;
+        display: flex;
+        flex-direction: column;
+
+        &__text {
+            color: $clear-color;
+        }
+    }
+
+
+    // ========================================
+    // 6. TERMINAL
+    // ========================================
+
+    &__terminal {
+        // Estilos específicos de la terminal
+    }
+
+
+    // ========================================
+    // TABLET
+    // ========================================
+}

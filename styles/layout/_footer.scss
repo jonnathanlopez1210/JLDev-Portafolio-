@@ -1,0 +1,71 @@
+@use "../abstracts/_variables" as *;
+@use "../abstracts/_mixins" as *;
+
+.footer {
+
+    // ========================================
+    // 1. INFORMACIÓN + REDES SOCIALES
+    // ========================================
+
+    &__top {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    &__social {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    &__social-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        text-decoration: none;
+
+        transition: opacity 0.2s ease;
+
+        &:hover {
+            opacity: 0.7;
+        }
+
+        &:focus-visible {
+            outline: 2px solid $main-color;
+            outline-offset: 4px;
+        }
+    }
+
+    // ========================================
+    // 2. CAPTIONS
+    // ========================================
+
+    &__captions {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__caption {
+        display: flex;
+        align-items: center;
+    }
+
+
+    // ========================================
+    // 3. TERMINAL
+    // ========================================
+
+    &__terminal {
+        width: 100%;
+    }
+
+}
